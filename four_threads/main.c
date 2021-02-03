@@ -19,7 +19,7 @@ void *runner1(void *param) {
     long long i;
     sum1 = 0;
     for (i = 1000000000; i < 2000000000; i++) {
-        sum1 += i;
+        sum0 += i;
     }
     pthread_exit(0);
 }
@@ -28,7 +28,7 @@ void *runner2(void *param) {
     long long i;
     sum2 = 0;
     for (i = 2000000000; i < 3000000000; i++) {
-        sum2 += i;
+        sum0 += i;
     }
     pthread_exit(0);
 }
@@ -37,7 +37,7 @@ void *runner3(void *param) {
     long long i;
     sum3 = 0;
     for (i = 3000000000; i <= 4000000000; i++) {
-        sum3 += i;
+        sum0 += i;
     }
     pthread_exit(0);
 }
